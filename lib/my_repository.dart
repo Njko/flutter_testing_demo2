@@ -36,7 +36,6 @@ class MyRepository {
     }*/
 
     //4*/
-    //try {
     final response = await client.get(requestString);
 
     if (response.statusCode == 200) {
@@ -46,8 +45,5 @@ class MyRepository {
       // If that call was not successful, throw an error.
       throw FetchPostRequestException('Not not found');
     }
-    //} finally {
-    //  client.close();
-    //}
   }
 }
